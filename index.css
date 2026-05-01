@@ -59,6 +59,8 @@ body{
 }
 main{
     width:100%;
+    /* hero styles */
+    margin:var(--spacing-xl) 0 0 0;
 }
 h1{    
     font-family: var(--heading-font);
@@ -290,10 +292,7 @@ p{
     text-decoration: underline;
 }
 
-/* hero styles */
-main{
-    margin:var(--spacing-xl) 0;
-}
+
 .button-container{
     display:flex;
     flex-direction: row;
@@ -581,16 +580,80 @@ main{
 .getting-started-section{
     display: flex;
     justify-content: center;
-    margin: var(--spacing-xl) 0 0 0;
+    /* I added this since it was too close to the other section */
+    /* margin: calc(var(--spacing-xl) * 2) 0 0 0; */
+    padding: calc(var(--spacing-xl) * 2) 0 var(--spacing-lg) 0;
 }
-
+.getting-started-section .col-left {
+    padding: 0 var(--spacing-xl) 0 0;
+}
 .getting-started-section .col-right {
     flex-direction: row;
 }
-
 .getting-started-section .col-right .card{
     width:50%;
     box-sizing: border-box ;
     padding: 0 var(--spacing-sm) 0 0;
     margin: 0 var(--spacing-md) 0 0;
+}
+.getting-started-section .primary-button{
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0 0 0;
+    &:hover {
+        background-color: var(--primary-accent);
+    }
+}
+.getting-started-section .col-right .card .secondary-button{
+   color:var(--purple-2);
+   padding-left: 0;
+}
+
+/* footer section */
+.footer{
+    display:flex;
+    justify-content: center;
+    background-color: var(--bg-light);
+   
+}
+#footer-logo {
+  max-width: 108px;
+  margin: 0 0 var(--spacing-md) 0;
+}
+.footer .section-container{
+    display: flex;
+    width:100%   
+}
+.footer .col{
+    width:25%;
+    padding:var(--spacing-xl);
+}
+.footer .col ul{
+    list-style: none;
+    padding:0;
+}
+.footer .col ul li {
+   margin: var(--spacing-md) 0;
+}
+.footer .col a{
+  color:var(--text-dark);
+  font-weight: 500;
+  &:hover{
+    color:var(--purple-1);
+    text-decoration: underline;
+  }
+}
+.footer .icon-link {
+    display:flex;
+    align-items: center;
+    margin:var(--spacing-sm) 0;
+    /* width:100%; */
+}
+
+.footer .icon-link img{
+    width:24px;
+    margin: 0 calc(var(--spacing-sm) / 2) 0 0;
+}
+.footer h3 {
+  font-size: var(--h6-size);
+  font-weight: 700;
 }
