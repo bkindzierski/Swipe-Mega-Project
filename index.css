@@ -733,3 +733,19 @@ p{
   font-size: var(--h6-size);
   font-weight: 700;
 }
+
+@media only screen and (max-width:1144px) {
+    .section-container{
+        padding: 0 var(--spacing-md);
+    }    
+}
+
+/* tablet size */
+@media only screen and (max-width:768px) {
+        
+}
+
+/* mobil size */
+@media only screen and (max-width:550px) {
+    
+}
