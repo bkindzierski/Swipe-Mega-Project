@@ -879,7 +879,9 @@ p{
     }
     .footer .col{
         width:50%;
-        margin:var(--spacing-md) 0;
+        margin:var(--spacing-sm) 0;
+        padding: var(--spacing-sm); 
+        
     }
 
     .footer .col a{
